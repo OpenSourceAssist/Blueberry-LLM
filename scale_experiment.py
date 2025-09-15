@@ -27,25 +27,11 @@ class ScaleExperiment:
         """Define experiment configurations."""
         return [
             {
-                "name": "Tiny",
-                "description": "Tiny model for rapid testing",
-                "args": ["--config", "dev"],  # Use dev config (smallest)
-                "expected_params": "~50M",
-                "expected_memory": "~8GB"
-            },
-            {
                 "name": "Default",
                 "description": "Default model configuration",
                 "args": [],  # Use default config
                 "expected_params": "~79M",
                 "expected_memory": "~12GB"
-            },
-            {
-                "name": "RTX5090",
-                "description": "RTX 5090 optimized configuration",
-                "args": ["--config", "rtx5090"],
-                "expected_params": "~150M",
-                "expected_memory": "~20GB"
             }
         ]
     
